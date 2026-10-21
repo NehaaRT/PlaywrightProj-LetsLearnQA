@@ -1,0 +1,25 @@
+
+ 
+How to Read data from JSON file
+----------------------------
+ 
+1]JSON data will help us make our tests data driven instead of using hard coded dat
+ 
+
+We will create a JSON file.
+------------------------
+ 
+2]Import the JSON file in our test.
+ 
+3]Then use json fields in our test.
+ 
+{
+ 
+Sample JSON:
+ 
+"username":
+ 
+"student",
+ 
+"password": "Password123
+}

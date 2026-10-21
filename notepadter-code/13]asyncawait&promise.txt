@@ -1,0 +1,34 @@
+1]. What is a Promise in Playwright?
+ 
+A Promise represents a value that will be available in the future.
+ 
+============================================
+
+In automation:
+-------------- 
+1]Opening a url in browser takes time
+ 
+2]Clicking a button takes time
+ 
+3]Getting text from an element takes time
+ 
+4]Calling an API takes time
+ 
+-------------------------------------------- 
+So Playwright functions return a Promise because they don't complete instantly.
+--------------------------------------------
+
+Example:
+ 
+1]page.goto('https://bstackdemo.com/")
+ 
+2]This does NOT immediately load the page.
+ 
+3]So page.goto() returns a Promise.
+ 
+================================================= 
+2. What is await?
+ 
+await tells:
+ 
+"Wait here until this Promise is completed before moving to next line."

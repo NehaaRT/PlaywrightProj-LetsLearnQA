@@ -1,0 +1,42 @@
+Playwright with TypeScript How to Create and Execute Test in Playwright
+//=============================================================================
+ 
+Step 1 Create test file (.spec.ts)
+ 
+Step 2 Do the necessary imports
+ 
+Step 3 Write the test
+ 
+Step 4 Execute the test
+ 
+Step 1 Create test file
+ 
+Create a spec.ts file under tests folder in project.
+ 
+Step 2 Do the necessary imports
+ 
+      import{test, expect} from '@playwright/test';
+ 
+This imports the test and expect functions from the Playwright Test module.
+ 
+     --test is used to define a test case.
+ 
+--expect is used for assertions (checking expected vs actual results).
+ 
+Step 3 Write the test
+ 
+     test('Verify Page Title', async ({ page }) => {
+ 
+     await page.goto('https://demoblaze.com/index.html');
+
+     await expect(page).toHaveTitle('STORE');
+ 
+// Waits for the page to load
+ 
+});
+ 
+// Waits for the title check
+
+
+
+ 

@@ -1,0 +1,18 @@
+1]What is iFrame HTML document inside another HTML document.
+ 
+2]Here we have to switch/enter in to iFrame if we want to interact with element inside iFrame.
+ 
+---------------------------------------------
+
+1. Using frameLocator()
+ 
+const testframe = await page.frameLocator('.demo-frame') testframe.locator('id=tags').fill('java');
+ 
+------------------------------------------- 
+Handling nested iFrames
+ 
+1]const parentFrame page.frameLocator('#parent-frame');
+ 
+2]const childFrame parentFrame.frameLocator('#child-frame');
+ 
+3]await childFrame.locator('button').click();

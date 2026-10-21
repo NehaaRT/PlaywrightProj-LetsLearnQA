@@ -1,0 +1,33 @@
+How to implement Page Object Model (POM)
+-----------------------------------
+ 
+ 1]Page Object Model is a design pattern to design the structure of our test framework.
+ 
+ 2]page class is created for each page of the application.
+ 
+ 3]page class contains element of the page and actions to be performed on the page. 
+  Then those page classes are used in the Test Methods where Test steps and Test logic is written
+ 
+Advantages of Page Object Model (POM)
+---------------------------------
+ 
+1] Code Reusability Common methods can be reused across multiple Tests. 
+   No need to write the same code repeatedly.
+ 
+2] Maintainability
+ 
+3] Readability
+ 
+4]If a locator changes in the application,you only update it in one Page Class instead of updating 
+ it in multiple test scripts.
+
+5] Test scripts become cleaner and easier to understand.
+ 
+6] Separation of Test Logic and Page Logic - This creates a proper framework structure.
+ 
+7] Easier Team Collaboration
+ 
+Different team members can work independently:
+----------------------------------
+
+ One team member can work on Page Classes Another can write test cases using existing methods.

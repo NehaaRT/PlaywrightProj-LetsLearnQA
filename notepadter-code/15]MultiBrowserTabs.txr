@@ -1,0 +1,37 @@
+
+1]How to Handle Multiple Browser Tabs
+   Playwright uses a three-tier structure to manage your automation session:
+ 
+ -------------------------------------------
+
+a] Browser: This is the physical instance of the browser (Chromium, Firefox, or WebKit).
+b] BrowserContext: This is an isolated "incognito-like" session within the Browser. It has its own cookies, local storage, and permissions.
+ 
+ ---------------------------------
+Page: This is a single tab or window within a BrowserContext
+----------------------------------
+ 
+Sample Script
+-----------------
+1] await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+ 
+2] It means script is expecting a new page being created  
+   [const pagepromise context.waitForEvent('page');]
+
+3] If we clicked first and then started waiting, the tab might open so fast that Playwright misses the event
+   By defining the promise first, we are ready to catch the event timely.
+ 
+   await page.getByRole('link', (name: "OrangeHRM, Inc")).click();
+
+-------------------------
+
+1]const newpage await pagepromise;
+2]Now we await that promise we created
+3]Once the click finishes and the browser opens the tab, pagePromise resolves,
+  and we assign that new tab to the variable newPage.
+4]You now have two distinct objects: page (the old tab) and newPage (the new tab).
+
+------------------------
+ 
+   console.log(await newpage.title());
+   await page.bringToFront(); //move to the original old tab

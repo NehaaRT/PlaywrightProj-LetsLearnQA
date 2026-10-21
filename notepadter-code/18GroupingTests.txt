@@ -1,0 +1,9 @@
+How to do Grouping of Tests in playwright
+----------------------------------------
+you can group tests using the : describe()block
+
+why
+-----
+1]group realted test toghther for better structure and readablity
+2]you can run only specify group of test using .only and .skip
+

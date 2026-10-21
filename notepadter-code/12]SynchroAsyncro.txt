@@ -1,0 +1,30 @@
+Almost everything in Playwright is asynchronous.
+ 
+ 
+1. Synchronous (Sequential)
+ 
+  1]Each task must finish before the next one starts. 
+  2]In a synchronous system, tasks are performed one at a time. 
+  3]If a task takes a long time (like waiting for a server), 
+  4]the entire process is "blocked" and has to wait.
+ 
+ --------------------------------
+ example:  Real-world analogy:
+ 
+   a]A line at a coffee shop.
+   b]You order and stand in the line.
+   c]Wait for the barista to make your drink, receive it,and
+   d]then the next person in line can order.
+
+ ================================================================================= 
+2. Asynchronous (Parallel/Non-blocking)
+ 
+    1]an asynchronous system, you can start a task and
+    2]then move on to the next one without waiting for the first one to finish. 
+    3]When the long-running task finally completes, the system notifies you (often via a "promise").
+ 
+ -------------------------
+ example : Real-world analogy:
+ 
+     a]A line at a coffee shop.
+ 

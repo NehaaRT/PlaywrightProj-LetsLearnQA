@@ -1,0 +1,30 @@
+Implement CI using GitHubActions in Page Object Model
+----------------------------------------------- 
+1]GitHub Actions is a Continuous Integration and
+2]Continuous Deployment (CI/CD) platform built directly into GitHub.
+3]In Playwright, a .yml (or .yaml) file is most commonly used to configure Continuous Integration (CI)pipelines,
+4]allowing your automated end-to-end tests to run automatically whenever code is pushed.
+5]Instead of just writing tests that run on your laptop,
+
+A]GitHub Actions lets you tell GitHub:
+  "a]Every time I push new code or open a pull request,
+   b]spin up a virtual computer in the cloud,
+   c]download my project, 
+   d]and run my automation suite."
+
+
+…or create a new repository on the command line
+--------------------------------------   
+echo "# MyPOMplaywright" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/NehaaRT/MyPOMplaywright.git
+git push -u origin main
+
+…or push an existing repository from the command line
+----------------------------------------
+git remote add origin https://github.com/NehaaRT/MyPOMplaywright.git
+git branch -M main
+git push -u origin main

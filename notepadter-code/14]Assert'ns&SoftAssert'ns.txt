@@ -1,0 +1,41 @@
+1]Assertions are used to validate expected outcomes in your tests.
+ 
+2]Playwright uses built-in assertion support via the expect API
+ 
+  a]You can use assertions after importing 
+
+    'expect' from @playwright/test:
+     import{test, expect} from '@playwright/test'
+
+=====================================================
+
+*]Assertion
+--------------
+ 
+1]await expect(locator).toBeVisible()                  Element is visible on the page
+ 
+2]await expect(locator).toBeEnabled()                  Element is not disabled
+ 
+3]await expect(locator).toHaveText('Submit')           Element contains exact text
+ 
+4]await expect(locator).toContainText('Sub')           Element contains partial text
+ 
+5]await expect(locator).toHaveValue('Value')           Input field has a specific value
+ 
+6]await expect(page).toHaveURL(/checkout/)             URL matches a st    
+ 
+7]await expect(page).toHaveTitle(/Dashboard/)          Page title matches
+
+==========================================================
+
+*]Soft Assertions
+-----------------
+ 
+1]By default, if an assertion fails, the entire test stops.
+ 
+2]Soft assertions allow the test to keep running and report all failures at the end.
+ 
+3]This is great for checking multiple independent UI elements.
+ 
+   a] await expect.soft(page.getByText('Welcome')).toBeVisible();
+ 

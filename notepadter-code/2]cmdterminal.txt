@@ -1,0 +1,37 @@
+-----------Basic command Terminal-----------------------
+
+npm init playwright@latest
+
+npx playwright test
+
+npx playwright test --headed
+
+npx playwright test --headed --project=chromium
+
+npx playwright show-report
+
+npx playwright test "tests/QaSeries/ .spec.ts" --project=chromium --headed 
+
+----------------website link------------------------
+
+1]https://practicetestautomation.com/pr...
+
+2]https://opensource-demo.orangehrmlive...
+
+3]https://testautomationpractice.blogsp...
+
+4]https://www.testmuai.com/selenium-pla...
+
+  a]alert-box:
+   https://www.testmuai.com/selenium-playground/javascript-alert-box-demo/ 
+
+   b]checkbox:
+   https://www.testmuai.com/selenium-playground/checkbox-demo  
+
+   c]table:
+   testmuai.com/selenium-playground/table-sort-search-demo/
+
+6]https://jqueryui.com/autocomplete/        
+
+7]https://www.saucedemo.com/inventory.html
+

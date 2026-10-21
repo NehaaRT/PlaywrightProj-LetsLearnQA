@@ -1,0 +1,63 @@
+Types of JS Alerts
+--------------------------------
+ 
+In web applications, you typically encounter:
+ 
+1]alert()→ simple message with OK
+ 
+2]confirm() → OK / Cancel
+ 
+3]prompt() input field + OK / Cancel
+
+==========================================
+
+1]Alerts are treated as browser dialogs,
+ 
+2]Playwright provides a dedicated 'dialog' event to manage them.
+ 
+3]Playwright listens for dialogs using following listener.
+ 
+eg:
+
+page.on('dialog', async dialog => {
+ 
+console.log(dialog.message());
+ 
+await dialog.accept();
+ 
+});
+
+==================================
+page represents the browser tab:
+ 
+a].on() → used to listen to events
+ 
+b]'dialog' event fired when a JS alert appears
+
+======================================
+ 
+ "Whenever any JavaScript dialog (alert/confirm/prompt) appears on this page, run this function."
+ 
+How It Works
+------------
+ 
+--When a page triggers a JavaScript dialog, like: alert(), confirm() or prompt()
+ 
+--Playwright emits a dialog event
+ 
+--Then listner is automatically invoked with a dialog object containing methods and properties to interact with the dialog.
+
+============================================= 
+Method / Property
+ 
+1]dialog.message()     Gets the message shown in the alert/prompt/confirm
+ 
+2]dialog.accept()      Accepts the dialog (OK button);
+ 
+3]dialog.dismiss()     Cancels the dialog (Cancel button)
+ 
+4]dialog.accept('text')  Accepts with text in prompt box
+ 
+5]dialog.type()         Returns alert, confirm, or prompt
+ 
+

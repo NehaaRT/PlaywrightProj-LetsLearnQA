@@ -1,0 +1,8 @@
+
+Storage State
+-------------------
+1]we login only once, 
+2]save the authenticated session (cookies + local storage), 
+3]and reuse it across all tests.
+ 
+This makes execution much faster and avoids repeated login steps.

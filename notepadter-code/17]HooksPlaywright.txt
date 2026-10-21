@@ -1,0 +1,47 @@
+What are Hooks in Playwright
+--------------------------- 
+In Playwright, hooks are special functions provided by the Playwright. Test Runner that helps you perform setup and teardown actions around your tests.
+
+============================================================
+
+Why hooks are useful
+--------------------------
+ 
+1]Avoid repeating setup code
+ 
+2]Keep tests clean and readable
+ 
+3]Ensure consistent environment for every test
+ 
+4]Handle teardown automatically
+
+========================================
+ 
+Hook                  Description
+----------------------------------------
+ 
+1]"beforeAll() |        Runs once **before all tests** in a file
+ 
+2]afterAll()`           Runs once **after all tests** in a file
+ 
+3]beforeEach() |        Runs **before each test**
+ 
+4]| `afterEach() |      Runs **after each test
+
+
+-----------------------
+beforeAll()
+test 1
+test 2
+afterAll()
+
+----------------------
+beforeEach
+test 1
+afterEach()
+
+---------------------
+
+beforeEach()
+test2
+afterEach()

@@ -1,0 +1,17 @@
+How to Select an Option from a Drop Down
+ //=======================================================================
+
+ Dropdowns in HTML are typically created using <select> and <option> tag.
+ 
+You can interact with them using the .selectOption() method.
+ 
+.selectOption() accepts:
+ 
+--label: the visible text inside the option tag
+ 
+--index: the position in the dropdown list (starting from 0)
+ 
+--value: the value attribute of an option tag
+ 
+ 
+ 

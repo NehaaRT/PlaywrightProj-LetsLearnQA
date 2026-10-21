@@ -1,0 +1,6 @@
+How to Create and Use Custome Fixture
+ 
+1]Think of a Custom Fixture in Playwright as a specialized, 
+2]pre-packaged helper that sets up everything your test needs before it runs.
+ 
+I

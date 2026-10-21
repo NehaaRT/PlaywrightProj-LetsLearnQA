@@ -1,0 +1,35 @@
+1]check()
+
+await page.locator('#checkbox1').check();
+
+--------------------------------------
+2] uncheck()
+
+ await page.locator('#checkbox1').uncheck();
+
+ ------------------------------------
+3]isChecked()
+
+ await page.locator('#checkbox1').isChecked();
+
+--------------------------------------- 
+ 
+4]isEnabled()
+
+await page.locator('#checkbox1').isEnabled();
+ 
+ =============================================
+
+Assertion
+----------
+Assertion means checkbox is expected to be in checked state and not checked state 
+
+1]await expect(page.locator('#checkbox1')).toBeChecked();
+ 
+2]await expect(checkbox).not.toBeChecked();
+ 
+=========================== 
+Handle Multiple Checkboxes
+
+1]const checkboxes = page.locator('input[type="checkbox"]'); 
+  await checkboxes.nth(i).check()

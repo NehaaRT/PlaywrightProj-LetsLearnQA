@@ -1,0 +1,19 @@
+23 Playwright with TypeScript
+ 
+How to add
+ 
+Fixture Layer
+ 
+Page Object Model
+ 
+Right now, in our test file, we are instantiating the pages manually inside the tests themselves
+ 
+For example: const loginPage = new LoginPage(page);
+ 
+In real-world Playwright frameworks, we eliminate this boilerplate by creating Custom Fixtures.
+ 
+This layer automatically instantiates your page objects and passes them directly into your test arguments.
+ 
+How it improves your project:
+ 
+Cleaner Test Files: Your tests focus entirely on the business logic, not setup mechanics.

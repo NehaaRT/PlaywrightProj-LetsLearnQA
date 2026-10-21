@@ -1,0 +1,49 @@
+Locators represent a way to find element(s) on the page at any moment.
+//============================================================================
+
+Locator Type
+ 
+1] getByRole
+ 
+     page.getByRole('button', { name: 'Submit' })
+ 
+     e.g., button, link
+ 
+2] getByText
+ 
+     page.getByText('Login')
+ 
+     Matches element with visible text
+ 
+3] getByPlaceholder
+ 
+     page.getByPlaceholder ('Enter name')
+ 
+      Matches input's placeholder text
+ 
+4]getByTitle
+ 
+      page.getByTitle('Close')
+ 
+      Matches title attribute
+ 
+5]getByAltText
+ 
+     page.getByAltText('Product Image')
+ 
+     Matches alt attribute of <img> tags
+ 
+6]Get By Text
+ 
+    await page.getByText('Get Started Free').click()
+ 
+6]Get By Role
+ 
+    await page.getByRole('link', {name: 'Pricing'}).click()
+ 
+    await page.getByRole('button', name: 'Submit'}).click()
+ 
+7]Get By Placeholder
+ 
+    await page.getByPlaceholder('Company').fill('LetsLearnQA')
+ 

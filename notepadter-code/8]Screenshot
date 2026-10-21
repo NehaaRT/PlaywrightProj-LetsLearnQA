@@ -1,0 +1,27 @@
+ 
+How to take screenshot
+------------------------
+ 
+1]In Playwright, taking screenshots is very simple and powerful.
+ 
+2]use .screenshot() method
+ 
+You can capture:
+--------------------
+ The viewport
+ 
+await page.screenshot({ path: 'viewport.png'});
+
+-------------------
+ 
+The entire page
+ 
+await page.screenshot({ path: 'fullpage.png', fullPage: true });
+
+------------------
+ 
+A specific element
+ 
+const ele = await page.locator("//h1")
+ 
+await ele.screenshot({path: 'ele.png'}
