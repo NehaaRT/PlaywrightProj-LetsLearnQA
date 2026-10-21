@@ -22,4 +22,4 @@ test('LoginTest', async ({ page }) => {
 //npx playwright test "tests/QaSeries/19ReadataJSON.spec.ts" --project=chromium --headed
 
 
- 20CreUseCustFixt.spec.ts
+ //20CreUseCustFixt.spec.ts
