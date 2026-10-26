@@ -24,7 +24,7 @@ test('LoginTest',async ({page})=>
 
     await page.getByText('Get started free').click();
 
-    await page.waitForTimeout(5000);
+    await page.waitForTimeout(3000);
 
 
     
